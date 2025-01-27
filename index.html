@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/44a3794737.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+<div class="container">
+    <nav>
+    <div class="logo"><h1><span>B</span>enson</h1></div>
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li> 
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-x" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+     <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi, I'm <span>Benson</span><br> Tochukwu from Nigeria</h1> 
+      </div>
+</div>
+    </div>
+
+<!-----------about----------->
+   <div id="about">
+
+
+      <div class="container">
+         <div class="row">
+              <!-- <div class="about-col-1">
+                <img src="images/user.png" alt="">
+              </div> -->
+              <div class="about-col-1">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hi, I'm Teco-Benson Tochukwu, a web development enthusiast and Computer Science student at Caleb University. 
+                    I'm still in my undergraduate studies (2021-present),Through various projects and an internship, I've been continuously enhancing my web development skills.
+                    
+                    I've built a solid foundation in Java, JavaScript, CSS, and HTML, allowing me to create dynamic and functional web applications. 
+                    My passion is creating responsive, user-focused web applications that offer seamless experiences. Additionally, I bring strong skills in project management and problem-solving, 
+                    ensuring that projects are completed on time and to the highest standards.
+                    
+                    ’m enthusiastic to apply my skills and knowledge to develop innovative solutions. As a detail-oriented and dedicated professional, 
+                    I’m eager to collaborate on projects that push the boundaries of full-stack and web development.</p>
+
+    <div class="tab-titles">
+<p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+<p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+<p></p>
+<p></p>
+    </div>
+
+    <div class="tab-content active-tab" id="skills">
+        <ul>
+            <li><span>Web Development</span><br>Web App Development</li>
+            <li><span>App Development</span><br>Building Android/IOS apps</li>
+            <li><span>Full Stack Development</span><br>Full Stack Developer</li>
+
+        </ul>
+    </div>
+
+    <div class="tab-content" id="experience">
+        <ul>
+            <li><span>2024</span><br>Completed a six-month paid Java internship at eTranzact International PLC, gaining hands-on experience in developing and maintaining reliable software solutions </li>
+        </ul>
+    </div>
+              </div>
+         </div>
+      </div>
+   </div>
+
+
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Full-Stack Development</h2>
+            <p>Building powerful and scalable web applications from the ground up. With a solid foundation in backend development using Java and full-stack capabilities, I deliver seamless solutions that connect robust server-side logic with responsive and engaging front-end interfaces.</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Dynamic Web Solutions</h2>
+            <p>Designing captivating web applications that engage users and drive results. By utilizing HTML, CSS, Bootstrap, JavaScript, and React, I deliver responsive, functional, and modern web experiences tailored to your needs.</p>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>Crafting user-friendly and visually appealing mobile apps that captivate and engage. Specializing in seamless UI/UX design and robust development for both iOS and Android platforms.</p>
+          </div>
+        </div>
+    </div>
+   </div>
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row"> 
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p> <i class="fa-solid fa-paper-plane"></i>tecotochukwu@gmail.com</p>
+              <p><i class="fa-solid fa-phone-volume"></i>+234 9032675331</p> 
+              <div class="social-icon">
+                <a href="https://wa.me/+2349032675331"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/its.teco_?igsh=Y2JrNTA1MXhuemxl"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/i_dont_haveana?s=21&t=s5rRQVmg1hbgsF49bgCBfA"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://ng.linkedin.com/in/tochukwu-teco-benson-808937288"><i class="fa-brands fa-linkedin-in"></i></a>
+             </div>
+             <a href="images/My-Cv.png" download class="btn btn2">Download Cv</a>
+           </div>
+           <div class="contact-right">
+              <form name="submit-to-google-sheet">
+               <input type="text" name="Name" placeholder="Your name" required>
+               <input type="text" name="Email" placeholder="Your Email" required>
+               <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+               <button type="submit" class="btn btn2">Submit</button>
+              </form> 
+
+               <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright @ Benson</p>
+    </div>
+</div>
+
+<script src="main.js"></script>
+
+<script>
+   
+  </script>
+</body>
+</html>
