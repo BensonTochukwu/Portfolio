@@ -32,7 +32,7 @@ function closeMenu(){
 }
 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbz-js5DWrgdaO1811UofSnJ4QE4fhN7e5JjdkBA6kAJrdIoZgDlcRXxQoK93xvn-I8F-g/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzGKI23R_VPWy2b6PLFOC4NyLmJZdRfNWo7V1PrA5BUK0WFKcJerQ-P63ev7QBlris1/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("msg")
 
