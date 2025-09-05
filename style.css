@@ -14,17 +14,8 @@ body {
     color: #fff;
 }
 
-#header {
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/background.png);
-    background-size: cover;
-    background-position: calc(100% + 300px) center;
-    background-repeat: no-repeat;
-}
-
 .container {
-    padding: 10px 10%;
+    padding: 50px 10%;
 }
 
 nav {
@@ -90,10 +81,16 @@ nav ul li a:hover::after {
     color: #2c37b8;
 }
 
+.header-text h1 .sub-heading {
+    font-size: 30px;
+    color: #fff;
+}
+
 /*-----------about---------*/
 
 #about {
-    padding: 80px 0;
+    padding-top: 180px;
+    padding-bottom: 10px;
     color: #ababab;
 }
 
@@ -104,7 +101,7 @@ nav ul li a:hover::after {
 }
 
 .about-col-1 {
-    flex-basis: 35%;
+    flex-basis: 40%;
 }
 
 .about-col-1 img {
@@ -113,8 +110,20 @@ nav ul li a:hover::after {
 }
 
 .about-col-2 {
-    flex-basis: 60%;
+    flex-basis: 40%;
 }
+
+.about-col-2 img {
+    width: 100%;
+    height: auto;
+    /* keep aspect ratio */
+    max-width: 100%;
+    /* prevent it from overflowing */
+    border-radius: 15px;
+    object-fit: cover;
+    /* crop nicely if the container has fixed height */
+}
+
 
 .sub-title {
     font-size: 60px;
@@ -175,7 +184,7 @@ nav ul li a:hover::after {
 /* services */
 
 #services {
-    padding: 30px 0;
+    padding: 10px 0;
 
 }
 
@@ -430,11 +439,15 @@ nav .fas {
 
     .header-text {
         margin-top: 110%;
-        font-size: 16px;
+        font-size: 25px;
     }
 
     .header-text h1 {
-        font-size: 30px;
+        font-size: 40px;
+    }
+
+    .header-text h1 .sub-heading {
+        font-size: 25px;
     }
 
     .logo h1 {
