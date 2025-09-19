@@ -234,13 +234,13 @@ nav ul li a:hover::after {
 
 #portfolio {
     padding: 50px 0;
-
 }
 
 .work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns */
+    gap: 40px;
     margin-top: 50px;
 }
 
@@ -250,13 +250,34 @@ nav ul li a:hover::after {
     overflow: hidden;
 }
 
+/* Portrait vs Landscape images */
 .work img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
     display: block;
     transition: transform 1s;
 }
 
+/* Portrait projects */
+.work:not(.landscape) img {
+    aspect-ratio: 3 / 4;
+    /* tall */
+}
+
+/* Landscape project */
+.work.landscape {
+    grid-column: span 2;
+    /* full row */
+}
+
+.work.landscape img {
+    aspect-ratio: 16 / 9;
+    /* wide */
+}
+
+/* Hover overlay */
 .layer {
     width: 100%;
     height: 0;
@@ -276,7 +297,6 @@ nav ul li a:hover::after {
     transition: height 1s;
 }
 
-
 .layer h3 {
     font-weight: 500;
     margin: 20px;
@@ -288,7 +308,7 @@ nav ul li a:hover::after {
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #ffff;
+    background: #fff;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -307,6 +327,7 @@ nav ul li a:hover::after {
     height: 100%;
 }
 
+/* Button */
 .btn {
     display: block;
     margin: 50px auto;
@@ -321,30 +342,6 @@ nav ul li a:hover::after {
 
 .btn:hover {
     background: #2c37b8;
-
-}
-
-/* portfolio */
-
-.work-list {
-    display: flex;
-    flex-wrap: wrap;
-    /* allows stacking */
-    gap: 60px;
-    justify-content: center;
-}
-
-.work {
-    flex: 1 1 45%;
-    /* side by side on big screens */
-    max-width: 600px;
-}
-
-.work img {
-    width: 100%;
-    height: 1000px;
-    object-fit: cover;
-    border-radius: 10px;
 }
 
 /* contact */
@@ -519,6 +516,39 @@ nav .fas {
     .work img {
         height: auto;
         /* let image resize naturally */
+    }
+
+    .work-list {
+        grid-template-columns: 1fr;
+        /* stack on small screens */
+    }
+
+    .work.landscape {
+        grid-column: span 1;
+        /* still full width in 1-column layout */
+    }
+
+    .work.landscape img {
+        max-height: 400px;
+        /* increase this number until it feels right */
+
+    }
+
+    .layer {
+        padding: 0;
+        font-size: 12px;
+    }
+
+    .layer h3 {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .layer a {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 50px;
     }
 }
 
